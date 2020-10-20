@@ -34,7 +34,10 @@ namespace NewsApp.Droid.Dependencies
 
         public async Task<bool> UserSigninUsingEmailAndPassword(string email, string password)
         {
-            return true;
+            if (email.Contains('@'))
+                return true;
+            else
+                return false;
         }
     }
 }

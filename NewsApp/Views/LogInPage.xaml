@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:NewsApp.ViewModels"
              x:Class="NewsApp.Views.LogInPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <vm:LogInVM x:Key="vm"/>
+        </ResourceDictionary> 
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <Grid>
+        <Grid BindingContext="{StaticResource vm}">
             <StackLayout x:Name="loginStack" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="16" IsVisible="True">
-                <Entry Placeholder="Email id" HorizontalOptions="FillAndExpand"/>
-                <Entry Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
-                <Button Text="Login" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Email id" HorizontalOptions="FillAndExpand" Text="{Binding Email, Mode=TwoWay}"/>
+                <Entry Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand" Text="{Binding Password, Mode=TwoWay}"/>
+                <Button Text="Login" HorizontalOptions="FillAndExpand" Command="{Binding LoginCommand}" CommandParameter="{Binding CanLogin}"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                 <Label Text="Not registered yet?"/>
                     <Label Text="Register" TextColor="Blue" TextDecorations="Underline">
