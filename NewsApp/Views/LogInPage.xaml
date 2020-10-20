@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewsApp.Views.LogInPage">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout x:Name="loginStack" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="16" IsVisible="True">
+                <Entry Placeholder="Email id" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Login" HorizontalOptions="FillAndExpand"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="Not registered yet?"/>
+                    <Label Text="Register" TextColor="Blue" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_RegisterTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="registerStack" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="16" IsVisible="False">
+                <Entry Placeholder="Name" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Email id" HorizontalOptions="FillAndExpand"/>
+                <Entry Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Login" HorizontalOptions="FillAndExpand"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="Already registered?"/>
+                    <Label Text="Login" TextColor="Blue" TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_LoginTapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

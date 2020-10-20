@@ -1,0 +1,15 @@
+F:\NewsAppProject\NewsApp\NewsApp\bin\Debug\netstandard2.0\NewsApp.deps.json
+F:\NewsAppProject\NewsApp\NewsApp\bin\Debug\netstandard2.0\NewsApp.dll
+F:\NewsAppProject\NewsApp\NewsApp\bin\Debug\netstandard2.0\ref\NewsApp.dll
+F:\NewsAppProject\NewsApp\NewsApp\bin\Debug\netstandard2.0\NewsApp.pdb
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.AssemblyInfoInputs.cache
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.AssemblyInfo.cs
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.csproj.CoreCompileInputs.cache
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\XamlC.stamp
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.dll
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\ref\NewsApp.dll
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.pdb
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\NewsApp.csprojAssemblyReference.cache
+F:\NewsAppProject\NewsApp\NewsApp\obj\Debug\netstandard2.0\Views\LogInPage.xaml.g.cs
